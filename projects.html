@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>My Projects | Full-Stack Web Developer</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header-inner" class="text-center">
+        <div class="container">
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- Section A: Gallery -->
+    <section id="work-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Checkout some of my projects</p>
+            <div class="items">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="image/items/dad-jokes.png" alt="">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">MERN Stack App</p>
+                            <h2 class="item-text-title"><a href="https://daddabase.netlify.app/"  taget="_blank">DaddaBase</h2></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="image/items/harvest-soul.png" alt="">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Online Community</p>
+                            <h2 class="item-text-title"><a href="https://harvest-soul-app.adaptable.app" taget="_blank">HarvestSoul</h2></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="image/items/cards.png" alt="">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">DOM Manipulation</p>
+                            <h2 class="item-text-title"><a href="https://david-mullally.github.io/project1-game/" taget="_blank">C.A.R.D.S</h2></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Dave Mullally 2023</p>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/david-mullally/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/David-Mullally" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/IMeamtWhatISaid" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar')
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200)
+            } else {
+                navbar.classList.add("top");
+                scrolled = false;
+            }
+        }
+
+        //Smooth Scrolling 
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            var target = this.hash;
+            var $target = $(target);
+            $('html, body').animate({
+                'scrollTop': $target.offset().top - 100
+            }, 900, 'swing');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+//Variables 
+$website-width: 1480px;
+$main-color: #2E4F4F;
+$light-color: #CBE4DE;
+$medium-color: #0E8388;
+$dark-color: #2C3333;
+$bg-image: url("../../image/code-background.jpg");
+$menu-speed: 2s;
+
+//Set Text Color
+@function set-text-color($color){
+    @if(lightness($color) > 50){
+        @return #000;
+    } @else{
+        @return #fff;
+    }
+}
