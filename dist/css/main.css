@@ -177,36 +177,6 @@ input[class^='btn-']:hover {
         height: auto;
         line-height: 0; }
 
-/* Navbar*/
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #333;
-  color: #fff;
-  opacity: 0.8;
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  padding: 0 30px;
-  transition: 0.5s ease-in; }
-  .navbar.top {
-    background: transparent; }
-  .navbar a {
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 5px;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.95); }
-    .navbar a:hover {
-      border-bottom: #0E8388 2px solid; }
-  .navbar ul {
-    display: flex;
-    list-style: none; }
-  .navbar .logo {
-    font-weight: 400; }
-
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -528,12 +498,12 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  color: #CBE4DE; }
+  color: #fff; }
 
 #contact-c h1 {
   text-align: center;
   font-size: 4rem;
-  color: #CBE4DE; }
+  color: #fff; }
 
 #main-footer {
   background: #2C3333;
@@ -560,7 +530,7 @@ a {
 
 @media (min-width: 0px) {
   #work-a .container {
-    height: 73vh; } }
+    height: 130vh; } }
 
 @media (max-width: 800px) {
   #header-home {
@@ -572,8 +542,6 @@ a {
     height: 30rem; } }
 
 @media (max-width: 800px) and (max-width: 500px) {
-  #navbar a {
-    font-size: 0.3rem; }
   #main-nav {
     flex-direction: column;
     align-items: center; }
@@ -603,7 +571,7 @@ a {
   #about-c {
     display: none; }
   #contact-a .text-fields {
-    width: 70%;
+    width: 100%;
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
   #contact-b div {
     margin-bottom: 1rem;

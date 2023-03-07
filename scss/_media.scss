@@ -1,7 +1,7 @@
 @media(min-width: 0px){
    #work-a{
     .container{
-        height: 73vh;
+        height: 130vh;
     }
    }
 }
@@ -23,12 +23,6 @@
 
     //Smart Phones
     @media(max-width:500px) {
-
-        #navbar{
-            a{
-                font-size: 0.3rem;
-            }
-        }
         #main-nav {
             flex-direction: column;
             align-items: center;
@@ -99,7 +93,7 @@
         #contact {
             &-a {
                 .text-fields {
-                    width: 70%;
+                    width: 100%;
                     grid-template-areas:
                         'name'
                         'subject'
