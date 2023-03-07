@@ -1,5 +1,5 @@
 #work-a{
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 .items {
     display: grid;
@@ -7,7 +7,7 @@
     box-shadow: 0 5px 10px 0 rgba(0, 1, 0, 0.2);
     color: #fff;
     height: auto;
-    grid-gap: 2rem;
+    grid-gap: 4rem;
 
     .item-image img {
         width: 100%;
@@ -17,6 +17,12 @@
         position: relative;
         background: $main-color;
         overflow: hidden;
+
+        p{
+            margin: 0 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+        }
 
         &::after {
             content: '';
@@ -69,8 +75,6 @@
                 &:hover{
                     opacity: 0.5;
                 }
-
-
             }
 
             &-title {

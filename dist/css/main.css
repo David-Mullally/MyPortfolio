@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .container {
   max-width: 1480px;
   padding: 0 1.5rem;
@@ -94,7 +95,7 @@ input[class^='btn-']:hover {
   margin: 0 auto 1rem auto; }
 
 #work-a {
-  margin-top: 3rem; }
+  margin-top: 4rem; }
 
 .items {
   display: grid;
@@ -102,13 +103,17 @@ input[class^='btn-']:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 1, 0, 0.2);
   color: #fff;
   height: auto;
-  grid-gap: 2rem; }
+  grid-gap: 4rem; }
   .items .item-image img {
     width: 100%; }
   .items .item {
     position: relative;
     background: #2E4F4F;
     overflow: hidden; }
+    .items .item p {
+      margin: 0 1rem;
+      font-size: 0.9rem;
+      text-align: center; }
     .items .item::after {
       content: '';
       position: absolute;
@@ -295,7 +300,7 @@ input[class^='btn-']:hover {
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.4;
   background: #f4f4f4; }
 
@@ -416,6 +421,8 @@ a {
   border-left: 3px solid #2E4F4F;
   padding: 0.8rem;
   text-align: left; }
+  #about-a .bio p {
+    margin: 1rem 0; }
 
 #about-a .award-1 {
   grid-area: aw1; }
@@ -531,6 +538,10 @@ a {
 @media (min-width: 0px) {
   #work-a .container {
     height: 115vh; } }
+
+@media (min-width: 800px) {
+  #work-a .container {
+    height: 60vh; } }
 
 @media (max-width: 800px) {
   #header-home {
