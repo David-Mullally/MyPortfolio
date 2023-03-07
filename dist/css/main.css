@@ -93,11 +93,16 @@ input[class^='btn-']:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
+#work-a {
+  margin-top: 3rem; }
+
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   box-shadow: 0 5px 10px 0 rgba(0, 1, 0, 0.2);
-  color: #fff; }
+  color: #fff;
+  height: auto;
+  grid-gap: 2rem; }
   .items .item-image img {
     width: 100%; }
   .items .item {
@@ -284,8 +289,8 @@ input[class^='btn-']:hover {
 .menu-wrap .menu > div {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
+  width: 400vw;
+  height: 400vw;
   display: flex;
   flex: none;
   align-items: center;
@@ -527,7 +532,8 @@ a {
 
 #contact-c h1 {
   text-align: center;
-  font-size: 4rem; }
+  font-size: 4rem;
+  color: #CBE4DE; }
 
 #main-footer {
   background: #2C3333;
@@ -552,9 +558,9 @@ a {
         background: #2E4F4F;
         color: #fff; }
 
-@media (min-width: 801px) {
+@media (min-width: 0px) {
   #work-a .container {
-    height: 67vh; } }
+    height: 73vh; } }
 
 @media (max-width: 800px) {
   #header-home {
@@ -566,6 +572,8 @@ a {
     height: 30rem; } }
 
 @media (max-width: 800px) and (max-width: 500px) {
+  #navbar a {
+    font-size: 0.5rem; }
   #main-nav {
     flex-direction: column;
     align-items: center; }
@@ -595,6 +603,7 @@ a {
   #about-c {
     display: none; }
   #contact-a .text-fields {
+    width: 70%;
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
   #contact-b div {
     margin-bottom: 1rem;

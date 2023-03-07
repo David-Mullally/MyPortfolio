@@ -173,8 +173,8 @@
 .menu-wrap .menu>div {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 400vw;
+    height: 400vw;
     display: flex;
     flex: none;
     align-items: center;
@@ -529,6 +529,7 @@ a {
         h1 {
             text-align: center;
             font-size: 4rem;
+            color: $light-color;
         }
     }
 }

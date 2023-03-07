@@ -1,8 +1,13 @@
+#work-a{
+    margin-top: 3rem;
+}
 .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     box-shadow: 0 5px 10px 0 rgba(0, 1, 0, 0.2);
     color: #fff;
+    height: auto;
+    grid-gap: 2rem;
 
     .item-image img {
         width: 100%;
